@@ -4,10 +4,10 @@ name = gets.chomp
 while name != 'exit'
 	puts 'Great! ' + name + ', what operations with numbers do you need? Addition - enter "+", if Subtraction - enter "-", if Multiplication - "*", if Division - "/" '
 	operator = gets.chomp.to_s
-		#while operator != '+' || operator != '-' || operator != '*' || operator != '/' do
-		#	puts 'Oops! Enter valid operator'	
-		#	operator = gets.chomp.to_s
-		#end
+		while operator != '+' && operator != '-' && operator != '*' && operator != '/' do
+			puts 'Oops! Enter valid operator'	
+			operator = gets.chomp.to_s
+		end
 	puts 'Done!'
 	puts name + ', please enter first number.'
 
