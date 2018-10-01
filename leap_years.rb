@@ -5,19 +5,24 @@ puts 'Hello! What is a starting year?'
 startYear = gets.chomp.to_i
 puts 'Great! What is a ending year?'
 endYear = gets.chomp.to_i
-residue = startYear%4
-puts residue
-	while residue != 0
-		puts residue
-		startYear = startYear + 1
-		puts startYear
-		residue = (startYear + 1)%4
-		puts residue
+residue4 = startYear%4 # leap
+residue100 = startYear%100 #not leap
+residue400 = startYear%400 #if 100 leap divisible by 400 - leap
+residueEnd = endYear%4
+
+	while startYear <= endYear # если последний год высокосный выводить, но не добавлять +4
+		if residue4 == 0
+		#puts startYear не могу вывести первый высокосный год
+		puts startYear = startYear + 4
+			else
+			startYear = startYear + 1
+			residue4 = startYear%4
+				if residue4 == 0
+				#puts startYear
+				puts startYear = startYear + 4
+			end
+		end
 	end
-puts startYear
 
 
 
-
-#puts 'Thanks! See all of the leap years between ' + startYear.to_s + ' and ' + endYear.to_s + ':'
-#puts leapYears
