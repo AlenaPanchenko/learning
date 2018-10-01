@@ -10,7 +10,7 @@ residue100 = startYear%100 #not leap
 residue400 = startYear%400 #if 100 leap divisible by 400 - leap
 residueEnd = endYear%4
 
-	while startYear <= endYear # если последний год высокосный выводить, но не добавлять +4
+	while startYear < endYear # если последний год +4 выходит за рамки ендДейт - не выводить
 		if residue4 == 0
 		#puts startYear не могу вывести первый высокосный год
 		puts startYear = startYear + 4
@@ -20,7 +20,7 @@ residueEnd = endYear%4
 				if residue4 == 0
 				#puts startYear
 				puts startYear = startYear + 4
-			end
+				end
 		end
 	end
 
