@@ -26,4 +26,14 @@ puts foods.join('; ') + ' - this is the best foods'
 #200.times do
 #	puts foods
 #end
-
+puts ''
+favorites = []
+favorites.push 'push0'
+favorites.push 'push1'
+favorites.push 'push2'
+puts favorites[0]
+puts favorites.last
+puts favorites.length
+puts favorites.pop
+puts favorites
+puts favorites.length
