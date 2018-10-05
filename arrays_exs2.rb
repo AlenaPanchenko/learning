@@ -10,4 +10,9 @@ end
 words.pop
 puts 'There are all your words that were sorted alphabetically'
 puts words.length
-puts words.sort
+
+#words.each do |word_par|
+#	if word_par < words[1]
+#		puts word_par
+#	end
+#end
