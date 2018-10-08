@@ -10,4 +10,4 @@ end
 words.pop
 puts 'There are all your words that were sorted alphabetically'
 puts words.length
-puts words.sort
+puts words.sort 

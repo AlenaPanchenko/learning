@@ -39,6 +39,8 @@ lineWidth = 50
 content = 'Table of Contents'
 puts content.center lineWidth
 puts ('Chapter 1:  Numbers'.ljust(lineWidth/2)) + ('page 1'.rjust(lineWidth/2))
+puts ('Chapter 2:  Numbers'.ljust(lineWidth/2)) + ('page 13'.rjust(lineWidth/2))
+puts ('Chapter 3:  Numbers'.ljust(lineWidth/2)) + ('page 133'.rjust(lineWidth/2))
 
 puts rand
 puts(rand(5))
