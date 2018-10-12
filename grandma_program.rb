@@ -2,7 +2,7 @@ while true
 	puts 'Please, tell me next phrase'
     command = gets.chomp 
 	if command == 'bye'.upcase
-		puts 'FUCK YOU'
+		puts 'Again'
 		break
 	end 
 	
