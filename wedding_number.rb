@@ -19,7 +19,7 @@ def englishNumber number
   
   #  "left" - сколько от числа нам ещё осталось вывести.
   #  "write"  - часть числа, которую мы выводим сейчас.
-  #  write и left... поняли?  :)
+
   left  = number
   
   write = left/1000000000
@@ -133,7 +133,8 @@ puts englishNumber(3211)
 puts englishNumber(999999)
 puts englishNumber(1000340)
 puts englishNumber(1060340)
+puts englishNumber(1000000)
 puts englishNumber(10603400)
 puts englishNumber(106034000)
+puts englishNumber(1000000000)
 puts englishNumber(1060340007)
-puts englishNumber(1000000000000)
