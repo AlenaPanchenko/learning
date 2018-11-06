@@ -95,10 +95,19 @@ def englishNumber number
   numString
 end
 
+puts 'How many bottles of beer on the wall?'
+bottles = gets.chomp.to_i
+bottlesNumber = englishNumber bottles
+
 lineWidth = 50
-puts (englishNumber(999) + ' Bottles of Beer'.center(lineWidth))
-puts (englishNumber(999) + ' bottles of beer on the wall, 99 bottles of beer.'.ljust(lineWidth))
-puts ('Take one down and pass it around, 98 bottles of beer on the wall.'.ljust(lineWidth))
-puts
-puts ('98 bottles of beer on the wall, 98 bottles of beer.'.ljust(lineWidth))
-puts ('Take one down and pass it around, 97 bottles of beer on the wall.'.ljust(lineWidth))
+puts (bottlesNumber + ' Bottles of Beer').center(lineWidth)
+
+while bottles != 0 
+	puts (bottlesNumber + ' bottles of beer on the wall, ' + bottlesNumber + ' bottles of beer.').ljust(lineWidth)
+	bottles = bottles - 1
+	bottlesNumber = englishNumber bottles
+	puts ('Take one down and pass it around, ' + bottlesNumber + ' bottles of beer on the wall.').ljust(lineWidth)
+	puts
+end
+
+
