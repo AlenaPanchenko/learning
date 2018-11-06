@@ -108,6 +108,10 @@ while bottles != 0
 	bottlesNumber = englishNumber bottles
 	puts ('Take one down and pass it around, ' + bottlesNumber + ' bottles of beer on the wall.').ljust(lineWidth)
 	puts
+		if bottles == 1
+			puts (bottlesNumber + ' bottle of beer on the wall, ' + bottlesNumber + ' bottle of beer.').ljust(lineWidth)
+			puts ('Take one down and pass it around, ' + bottlesNumber + ' bottle of beer on the wall.').ljust(lineWidth)
+		end
 end
 
 
