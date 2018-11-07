@@ -103,15 +103,19 @@ lineWidth = 50
 puts (bottlesNumber + ' Bottles of Beer').center(lineWidth)
 
 while bottles != 0 
-	puts (bottlesNumber + ' bottles of beer on the wall, ' + bottlesNumber + ' bottles of beer.').ljust(lineWidth)
+	if bottles == 1
+		puts (bottlesNumber + ' bottle of beer on the wall, ' + bottlesNumber + ' bottle of beer.').ljust(lineWidth)
+	else
+		puts (bottlesNumber + ' bottles of beer on the wall, ' + bottlesNumber + ' bottles of beer.').ljust(lineWidth)
+	end
 	bottles = bottles - 1
 	bottlesNumber = englishNumber bottles
-	puts ('Take one down and pass it around, ' + bottlesNumber + ' bottles of beer on the wall.').ljust(lineWidth)
+	if bottles == 1
+		puts ('Take one down and pass it around, ' + bottlesNumber + ' bottle of beer on the wall.').ljust(lineWidth)
+	else
+		puts ('Take one down and pass it around, ' + bottlesNumber + ' bottles of beer on the wall.').ljust(lineWidth)
+	end
 	puts
-		if bottles == 1
-			puts (bottlesNumber + ' bottle of beer on the wall, ' + bottlesNumber + ' bottle of beer.').ljust(lineWidth)
-			puts ('Take one down and pass it around, ' + bottlesNumber + ' bottle of beer on the wall.').ljust(lineWidth)
-		end
 end
 
 
