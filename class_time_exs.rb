@@ -30,6 +30,6 @@ while dateBorn < dateNow
 	puts dateBorn
 	puts 'SPANK!'
 	yearBorn = yearBorn + 1
-	dateBorn = Time.mktime(yearBorn, monthBorn, dayBorn)
+    dateBorn = Time.mktime(yearBorn, monthBorn, dayBorn)
 end
 
